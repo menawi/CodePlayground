@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- A heading element to display the website title-->
+  <h1 id="title"></h1>
+  <!-- A button element to trigger the display of an alert message -->
+  <button id="alert-button">Click me</button>
+  <!-- A form element to get input from the user-->
+  <button id="change-title">Click to Change Title</button>
+  <form>
+    <label for="name-input">Enter your name:</label>
+    <input type="text" id="name-input">
+    <button type="submit" id="submit-button">Submit</button>
+  </form>
+  <!-- A div element to display the name entered in the form -->
+  <div id="name-display"></div>
+  <!-- 
+  <script>
+    // Get the title element
+    const title = document.getElementById("title");
+    // Set the text content of the title element
+    title.textContent = "Welcome to my website";
+
+    // Get the alert button element
+    const alertButton = document.getElementById("alert-button");
+    // Add a click event listener to the alert button
+    alertButton.addEventListener("click", function () {
+      alert("Hello, World!");
+    });
+
+    // Get the form elements
+    const nameInput = document.getElementById("name-input");
+    const submitButton = document.getElementById("submit-button");
+    // Add a submit event listener to the form
+    submitButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      // Get the value of the name input
+      const name = nameInput.value;
+      // Get the name display element
+      const nameDisplay = document.getElementById("name-display");
+      // Set the text content of the name display element
+      nameDisplay.textContent = "Hello, " + name + "!";
+    });
+  </script> -->
+</body>
+<script src="index.js"></script>
+
+</html>
