@@ -9,7 +9,9 @@ class Person {
   }
 
   sayHello() {
-    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old.`
+    );
   }
 }
 
@@ -26,14 +28,12 @@ person2.sayHello(); // Output: "Hello, my name is Jane and I am 25 years old."
 // You can methods to the class
 
 Person.prototype.gender = "";
-Person.prototype.setGender = function(gender) {
-    this.gender = gender;
+Person.prototype.setGender = function (gender) {
+  this.gender = gender;
 };
 person1.setGender("male");
-console.log(person1.gender) // Output: "male"
-
-
+console.log(person1.gender); // Output: "male"
 
 // Make new instances of the class
 
-const Yumna = new Person('Yumna', 23);
+const Yumna = new Person("Yumna", 23);

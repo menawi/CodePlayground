@@ -47,7 +47,7 @@ function startGame() {
 
 function checkAnswer() {
   // Get the value of the answer input
-  var userAnswer = answer.value();
+  var userAnswer = answer.value;
   // Compare the user's answer to the correct answer
   if (userAnswer == questions[currentQuestionIndex].answer) {
     // If the answer is correct, add 1 to the score
