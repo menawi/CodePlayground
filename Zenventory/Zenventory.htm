@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zenventory</title>
+    <link rel="shortcut icon" href="https://app.zenventory.com/images/favicon.png" type="image/png">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="/style/MaterialIcons/iconfont/material-icons.css" rel="stylesheet" type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js" async></script>
+    <style>
+      /* this removes the X from inputs in ie */
+      input[type=text]::-ms-clear { display: none; width: 0; height: 0; }
+
+      /*react custom tooltip requires classes for styling*/
+      .reactCustomTooltip { background-color:    #616161 !important; padding: 6px 12px !important; font-size: 12px !important; 
+        white-space: pre-wrap; width: max-content;  max-width: 300px; }
+      .place-right:after  { border-right-color:  #616161 !important; }
+      .place-left:after   { border-left-color:   #616161 !important; }
+      .place-top:after    { border-top-color:    #616161 !important; }
+      .place-bottom:after { border-bottom-color: #616161 !important; }
+    </style>
+  </head>
+  <script> 
+    //needed for showing the logo while the page loads later
+    window.zenLogo = "/images/reactui/zen-logo.svg"; 
+    window.actual_site_root = "https://app.zenventory.com";
+    window.site_root = "";
+    window.app_color = "#e66e50";
+    window.stripe_key = "pk_live_rggQUkiLsRlh06KU3vwzBHNR";
+  </script>
+  <body>
+    <!-- here is the app -->
+    <div id="app">
+      <div  style="position: fixed; left:0; right:0; top: 0; bottom: 0; background: #e66e50;">
+        <!-- this div just makes the screen orange and shows the logo while page loads -->
+        <img 
+          src="/images/reactui/zen-logo.svg"
+          style="position: absolute; left: 50%; top: 50%; transform:translate(-50%,-50%); max-height: 500px; width: 400px"
+        />
+      </div>
+    </div>
+    <!-- webpack manifest goes here automatically -->
+  <script type="text/javascript" src="/react\index_manifest.d2c3354e2320f2f0cb40.js"></script><script type="text/javascript" src="/react\index_vendor.8d8507b9d2c1814572be.js"></script><script type="text/javascript" src="/react\index_main.85be773b6ef6ed541fd2.js"></script></body>
+</html>
