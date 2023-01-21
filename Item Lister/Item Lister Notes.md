@@ -26,6 +26,8 @@ Arrays !
 
 ```
 
+
+
 ## Questions
     
 - What is an HTML collection ?

@@ -1,0 +1,63 @@
+{
+  "editor.fontSize": 16,
+  "files.autoSaveDelay": 5000,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 50,
+  "terminal.integrated.fontSize": 20,
+  "terminal.integrated.shellIntegration.enabled": true,
+  "emmet.includeLanguages": {
+    "edge": "html"
+  },
+  "editor.lineHeight": 2,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "[markdown]": {
+    "preview": true,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "other": "on",
+      "strings": "on"
+    },
+    "editor.suggest.preview": true
+  },
+  "git.enableSmartCommit": true,
+  "explorer.confirmDragAndDrop": false,
+  "git.autofetch": true,
+  "explorer.confirmDelete": false,
+  "git.confirmSync": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "codeswing.layout": "preview",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "terminal.integrated.fontWeight": "normal",
+  "[json.format.enable]": {
+    "editor.wordWrapColumn": 50
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "GitHub Dark Default",
+  "notebook.compactView": false
+  // "[yaml]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "yaml.schemas": {
+  //   "file:///Users/Omar/.vscode/extensions/docsmsft.docs-yaml-0.2.9/out/yaml-support/toc.schema.json": "/toc\\.yml/i"
+  // },
+  // "redhat.telemetry.enabled": true,
+  // "[yaml]": {
+  //   "editor.defaultFormatter": "redhat.vscode-yaml"
+  // }
+}
