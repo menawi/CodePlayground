@@ -1,8 +1,8 @@
 {
   "recommendations": [
     "hardeepsingh.pyscript",
-    "MohamadNaserAlnakeshbandi-Student.pyscriptmaker",
-    "Blackboxapp.blackbox",
+    "mohamadnaseralnakeshbandi-student.pyscriptmaker",
+    "blackboxapp.blackbox",
     "codespaces-contrib.codeswing",
     "bierner.github-markdown-preview",
     "kuscamara.electron",
@@ -11,6 +11,7 @@
     "cescript.markdown-formula",
     "esbenp.prettier-vscode",
     "dunstontc.vscode-google-sheets-syntax",
-    "vscode-icons-team.vscode-icons"
+    "vscode-icons-team.vscode-icons",
+    "bierner.markdown-preview-github-styles"
   ]
 }
