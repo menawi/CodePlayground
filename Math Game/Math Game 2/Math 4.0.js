@@ -1,3 +1,7 @@
+
+// problem is this not generate new question after each run
+
+
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 const result = document.getElementById("result");
@@ -16,6 +20,7 @@ const operatorFunctions = {
   "*": (x, y) => x * y,
   "/": (x, y) => x / y,
 };
+// variable not a function
 const genQuestion = {
   question_text: `Calculate the value of ${larger_num} ${selectOperator} ${smaller_num}`,
   answer_math: operatorFunctions[selectOperator](larger_num, smaller_num),
