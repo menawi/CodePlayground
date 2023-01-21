@@ -2,6 +2,7 @@
 
 #javascript #programming #Template 
 
+
 ## Important Ideas Learned
 
 ```javascript
@@ -28,8 +29,8 @@ Arrays !
 ## Questions
     
 - What is an HTML collection ?
-- 
-
+- What is diff bw HTML collection and Node list?
+    > An HTML collection is an array and thus can have array methods run on it ; a node list is not, and must be converted into an HTML collection first in order to , for e.g. iterate over it.
 
 ## Observations
 
@@ -37,3 +38,21 @@ Arrays !
 - using loops to iterate over items of the same class 
 
 
+## ✅ Good Job !
+```javascript
+
+
+itemList.children[0].style.backgroundColor = 'yellow'
+
+let itemListArr = itemList.children
+// console.log(itemListArr[0].innerHTML)
+
+// 
+for (let i = 0; i < itemListArr.length; i++) {
+  const e = itemListArr[i];
+  i % 2 === 0 ?
+    e.style.backgroundColor = 'red' :
+    e.style.backgroundColor = 'green'
+}
+
+```
