@@ -13,7 +13,6 @@
   "workbench.iconTheme": "vscode-icons",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "[markdown]": {
-    "preview": true,
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordWrap": "on",
