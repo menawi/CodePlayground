@@ -21,12 +21,12 @@
     "description": "Creates a new snippet"
   },
 
-  "Print to console": {
-    "scope": "javascript,typescript",
-    "prefix": "log",
-    "body": ["console.log('$1');", "$2"],
-    "description": "Log output to console"
-  },
+  // "Print to console": {
+  //   "scope": "javascript,typescript",
+  //   "prefix": "log",
+  //   "body": ["console.log('$1');", "$2"],
+  //   "description": "Log output to console"
+  // },
   //   // "parapraph_style": {
   //   //   "prefix": "<p style",
   //   //   "body": "<p style = 'color: yellow"
@@ -65,5 +65,15 @@
     "scope": " javascript,jsonc  ",
     "prefix": ";log",
     "body": ["console.log($1)"]
+  },
+
+  "doc.queryselector": {
+    "prefix": "doc.qs",
+    "body": ["document.querySelector($1)"]
+  },
+
+  "doc.querySelectorAll": {
+    "prefix": "doc.sa",
+    "body": ["document.querySelectorAll($1)"]
   }
 }
