@@ -75,5 +75,9 @@
   "doc.querySelectorAll": {
     "prefix": "doc.sa",
     "body": ["document.querySelectorAll($1)"]
+  },
+  "script + source": {
+    "prefix": "scrpt",
+    "body": ["<script src='${1:src}'></script>"]
   }
 }

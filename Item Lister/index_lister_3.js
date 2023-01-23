@@ -4,8 +4,8 @@
 const testButton_2 = document.getElementById('test-2')
 // testButton.addEventListener('click', changeColor)
 
-let header = document.querySelector('#main-header')
-header.style.borderBottom = 'solid 3px red'
+// let header = document.querySelector('#main-header')
+// header.style.borderBottom = 'solid 3px red'
 
 let input = document.querySelector('input')
 input.value = 'hello'

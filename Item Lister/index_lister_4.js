@@ -15,18 +15,38 @@ itemList.parentNode.style.background = '#f4f4f4'
 // childNodes
 
 // children 
-itemList.children[0].style.backgroundColor = 'yellow'
+// itemList.children[0].style.backgroundColor = 'yellow'
 
-let itemListArr = itemList.children
-// console.log(itemListArr[0].innerHTML)
+// let itemListArr = itemList.children
+// // console.log(itemListArr[0].innerHTML)
 
-// 
-for (let i = 0; i < itemListArr.length; i++) {
-  const e = itemListArr[i];
-  i % 2 === 0 ?
-    e.style.backgroundColor = 'red' :
-    e.style.backgroundColor = 'green'
-}
+// // 📌
+
+// // 
+// for (let i = 0; i < itemListArr.length; i++) {
+//   const e = itemListArr[i];
+//   i % 2 === 0 ?
+//     e.style.backgroundColor = 'red' :
+//     e.style.backgroundColor = 'green'
+// }
+
+// fc gives us the node
+let fc = itemList.firstChild
+
+// fec gives us the actual eleement
+let fec = itemList.firstElementChild
+
+// agn element 
+let lec = itemList.lastElementChild
+
+
+// siblings
+
+let nextEsibling = itemList.nextElementSibling
+console.log(nextEsibling);
+
+// nextEsibling.style.backgroundColor = 'green'
+
 
 // console.log(itemList.children)
 
