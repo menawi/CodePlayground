@@ -79,5 +79,32 @@
   "script + source": {
     "prefix": "scrpt",
     "body": ["<script src='${1:src}'></script>"]
+  },
+
+  "let": {
+      "prefix": "L",
+      "body": [
+          "let",
+      ],
+  },
+
+  "const": {
+      "prefix": "C",
+      "body": [
+          "const",
+      ],
+  },
+
+  "function": {
+      "prefix": "fn",
+      "body": [
+          "function ${1:name}(${2:parameters}) { ${3:action}}",
+      ],
+  },
+  "arrowfunction": {
+      "prefix": "rf",
+      "body": [
+          "const ${1:function name} = (${2:parameters} => ${3:actions} )",
+      ],
   }
 }
