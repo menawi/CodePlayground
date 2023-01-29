@@ -1,0 +1,17 @@
+{
+
+
+
+
+
+
+
+
+
+    "script": {
+        "prefix": "script",
+        "body": [
+            "<script src=\"{1:source}\"></script> ",
+        ],
+    }
+}

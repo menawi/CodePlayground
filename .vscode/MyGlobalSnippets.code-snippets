@@ -5,7 +5,7 @@
   //   // Placeholders with the same ids are connected.
   //   // Example:
   "New Snippet Template": {
-    "scope": "jsonc",
+    "scope": "jsonc, json",
     "prefix": "snip",
     "body": [
       "\"${1:Snippet Name}\": {",
@@ -15,20 +15,14 @@
       "    ],",
       "}"
     ],
-    "description": "Creates a new snippet"
   },
 
-  // "description": "generates a new snippet"
-  "button": {
-    "scope": "html",
-    "prefix": "btn/start",
-    "body": "<button id = 'start-game' > Start Game </button>"
-  },
+
   // 📌JAVASCRIPT
   "doc.elmentbyId": {
     "scope": "javascript",
     "prefix": "doc.id",
-    "body": "document.getElementById( '${1:element_id}' )"
+    "body": "document.getElementById(\"${1:element_id}\")"
     // "description": "thing"
   },
   "mathFloorRandom": {

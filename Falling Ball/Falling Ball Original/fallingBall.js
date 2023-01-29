@@ -13,9 +13,7 @@ let y_init = 0;
 let x_spd = 50;
 let y_spd = 50;
 
-let clik = 0;
-let totalTim = 120;
-let timLef = totalTim;
+
 
 // gameStart();
 
