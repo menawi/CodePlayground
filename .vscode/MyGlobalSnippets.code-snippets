@@ -4,52 +4,27 @@
   //   // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
   //   // Placeholders with the same ids are connected.
   //   // Example:
-
   "New Snippet Template": {
     "scope": "jsonc",
     "prefix": "snip",
     "body": [
       "\"${1:Snippet Name}\": {",
-      // "    \"scope\": \"${2:scope}\",",
       "    \"prefix\": \"${3:prefix}\",",
       "    \"body\": [",
       "        \"${4:body}\",",
       "    ],",
-      // "    \"description\": \"${4:description}\"",
       "}"
     ],
     "description": "Creates a new snippet"
   },
 
-  // "Print to console": {
-  //   "scope": "javascript,typescript",
-  //   "prefix": "log",
-  //   "body": ["console.log('$1');", "$2"],
-  //   "description": "Log output to console"
-  // },
-  //   // "parapraph_style": {
-  //   //   "prefix": "<p style",
-  //   //   "body": "<p style = 'color: yellow"
-  //   // }
-
-  // "New Snippet": {
-  //   "scope": "code-snippets, json, jsonc",
-  //   "prefix": "/snp",
-  //   "body": [
-  //     "${1:snippet-name: ",
-  //     "${2:snippet-prefix}",
-  //     "${3:snippet-body}",
-  //     "${4:snippet-description}"
-  //   ]
   // "description": "generates a new snippet"
-
   "button": {
-    "scope": "html, javascript, css, json",
+    "scope": "html",
     "prefix": "btn/start",
     "body": "<button id = 'start-game' > Start Game </button>"
   },
   // 📌JAVASCRIPT
-
   "doc.elmentbyId": {
     "scope": "javascript",
     "prefix": "doc.id",
@@ -59,52 +34,57 @@
   "mathFloorRandom": {
     "scope": " javascript,jsonc  ",
     "prefix": "mathflrand",
-    "body": ["Math.floor(Math.random() ${0:variable?}) "]
+    "body": [
+      "Math.floor(Math.random() ${0:variable?}) "
+    ]
   },
   "console.log()": {
     "scope": " javascript,jsonc  ",
     "prefix": ";log",
-    "body": ["console.log($1)"]
+    "body": [
+      "console.log($1)"
+    ]
   },
-
   "doc.queryselector": {
     "prefix": "doc.qs",
-    "body": ["document.querySelector($1)"]
+    "body": [
+      "document.querySelector($1)"
+    ]
   },
-
   "doc.querySelectorAll": {
     "prefix": "doc.sa",
-    "body": ["document.querySelectorAll($1)"]
+    "body": [
+      "document.querySelectorAll($1)"
+    ]
   },
   "script + source": {
     "prefix": "scrpt",
-    "body": ["<script src='${1:src}'></script>"]
+    "body": [
+      "<script src='${1:src}'></script>"
+    ]
   },
-
   "let": {
-      "prefix": "L",
-      "body": [
-          "let",
-      ],
+    "prefix": "L",
+    "body": [
+      "let",
+    ],
   },
-
   "const": {
-      "prefix": "C",
-      "body": [
-          "const",
-      ],
+    "prefix": "C",
+    "body": [
+      "const",
+    ],
   },
-
   "function": {
-      "prefix": "fn",
-      "body": [
-          "function ${1:name}(${2:parameters}) { ${3:action}}",
-      ],
+    "prefix": "fn",
+    "body": [
+      "function ${1:name}(${2:parameters}) { ${3:action}}",
+    ],
   },
   "arrowfunction": {
-      "prefix": "rf",
-      "body": [
-          "const ${1:function name} = (${2:parameters} => ${3:actions} )",
-      ],
+    "prefix": "rf",
+    "body": [
+      "const ${1:function name} = (${2:parameters} => ${3:actions} )",
+    ],
   }
 }
