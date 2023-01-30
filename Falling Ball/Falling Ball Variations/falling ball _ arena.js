@@ -30,8 +30,8 @@ function gameStart() {
   x += xspeed;
   y += yspeed;
 
-  x + 1 >= arena.offsetWidth || x <0? (xspeed = -xspeed) : xspeed;
-  y + 1 >= arena.offsetHeight || y<0 ? (yspeed = -yspeed) : yspeed;
+  x + 50 >= arena.offsetWidth || x <0? (xspeed = -xspeed) : xspeed;
+  y + 50 >= arena.offsetHeight || y<0 ? (yspeed = -yspeed) : yspeed;
 
   // x + 50 > arena.offsetWidth || x < 0 ? (xspeed = -xspeed) : xspeed;
   // y + 50 > arena.offsetHeight  || y < 0 ? (yspeed = -yspeed) : yspeed;
