@@ -1,28 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playground</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playground</title>
 </head>
 <style>
-    *{
-        background-color: black;
-        color: white;
-    }
+  * {
+    background-color: black;
+    color: white;
+  }
+
+  #start:hover {
+    background-color: green;
+    
+  }
+
+
+
 </style>
+
 <body>
 
-    <h1>Playground</h1>
-    
-<h2>Where we test things</h2>
+  <h1>Playground</h1>
 
+  <h2>Where we test things</h2>
+
+  <div id="array-print-area">
+    <h3 id="print-array-text"></h3>
+  </div>
+
+  <button type="button" id="start">Start</button>
+
+
+  //
+
+  <script id="print to DOM over interval and loop">
+
+    // array
+
+    const FedEx = fetch('FedEx.json')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        // Access JSON data here
+      })
+      .catch(error => console.error(error));
+
+    console.log(FedEx);
+
+// dom element
+
+const h3array = document.getElementById("print-array-text")
+// console.log(h3array);
+
+
+
+// loop
+
+FedEx.forEach( function () => {
+  
+});
+
+// time factor
+
+
+  </script>
+
+
+  <!-- 
 <button class="btn" id="start">Start</button>
 
-<button class="btn" id="stop">Stop</button>
+<button class="btn" id="stop">Stop</button> -->
 
-<style>
+  <!-- <style>
   .btn {
     border: 2px solid black;
     background-color: white;
@@ -30,7 +83,8 @@
     padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
-  }
-</style>
+  } -->
+  </style>
 </body>
+
 </html>
