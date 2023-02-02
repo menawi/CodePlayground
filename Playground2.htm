@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <style>
+    #chartContainer {
+      width: 100%;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div id="chartContainer"></div>
+  <script>
+    window.onload = function() {
+      var data = [
+        { label: "Apple", y: 10 },
+        { label: "Banana", y: 15 },
+        { label: "Carrot", y: 25 },
+        { label: "Daikon", y: 30 }
+      ];
+
+      var chart = new CanvasJS.Chart("chartContainer", {
+        title: {
+          text: "Fruit Consumption"
+        },
+        data: [
+          {
+            type: "column",
+            dataPoints: data
+          }
+        ]
+      });
+
+      chart.render();
+
+      // Using forEach() loop
+      data.forEach(function(fruit) {
+        console.log(fruit.label, fruit.y);
+      });
+
+      // Using for...of loop
+      for (let fruit of data) {
+        console.log(fruit.label, fruit.y);
+      }
+
+      // Using for...in loop
+      for (let index in data) {
+        console.log(data[index].label, data[index].y);
+      }
+    };
+  </script>
+</body>
+</html>
